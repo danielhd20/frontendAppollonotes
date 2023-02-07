@@ -36,3 +36,48 @@
     transform: rotate(360deg);
   }
 }
+.navbar-custom {
+  background-color: #131313;
+}
+
+
+
+/*Scrollbar custom*/
+
+.scroll::-webkit-scrollbar{
+  width: 10px;
+  height: 1em;
+}
+
+
+.scroll::-webkit-scrollbar-thumb {
+  background: rgb(0, 0, 0);
+  border: 0.25em solid rgb(0, 0, 0);
+  border-radius: 100vw;
+}
+
+.scroll::-webkit-scrollbar-thumb:hover {
+  background: rgb(129, 129, 129);
+}
+
+
+.scroll {
+  max-height: 100vh;
+  overflow-y: auto;
+  
+}
+
+@media only screen and (min-width: 1400px){
+  .scroll {
+    max-height: 100vh;
+    overflow-y: hidden;
+    
+  }
+}
+@media only screen and (max-width: 575.98px)
+  {
+    .scroll {
+      max-height: 100vh;
+      overflow-y: visible;
+    }
+  }

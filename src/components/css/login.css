@@ -1,0 +1,108 @@
+/* .centrar{
+  display: block;
+  background: white;
+  text-align: center;  
+} */
+
+.Login{
+  width: auto;
+  height: auto;
+  display: flex;
+  background: #8C6D46;
+  text-align: center; 
+  justify-content: center;
+  align-items: center;
+  /* width: 100%;*/
+  height: 100vh; 
+  background-image: url("https://cdn.discordapp.com/attachments/884494223909462166/1058433166538457219/pexels-zsofia-feher-14640075.jpg");
+  background-position: center;
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+}
+
+
+@keyframes fanimado{
+  0%{
+      background-position: 0% 50%;
+  }
+  50%{
+      background-position: 100% 50%;
+  }
+  100%{
+      background-position: 0% 50%;
+  }
+}
+.gradient-custom-2 {
+  /* fallback for old browsers */
+  /* background: #fccb90;
+  
+  /* Chrome 10-25, Safari 5.1-6 */
+  /* background: -webkit-linear-gradient(to right, #00B7D4, #505488, #2F3F80, #161569); */ 
+  
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #8C6D46 !important;
+  /* background-size: 500%;
+  animation: fanimado 10s infinite; */
+  border-color: black !important;
+  }
+  .gradient-custom-2:hover,.gradient-custom-2:focus, .gradient-custom-2:active, .gradient-custom-2.active{
+    background-color: #413629!important;
+}
+  @media (min-width: 768px) {
+  .gradient-form {
+  height: 100vh !important;
+  }
+  }
+  @media (min-width: 769px) {
+  .gradient-custom-2 {
+  border-top-right-radius: .3rem;
+  border-bottom-right-radius: .3rem;
+  }
+  }
+.fondo2{
+  background-image: url("https://cdn.discordapp.com/attachments/884494223909462166/1058443795286474782/apolo-dios-musica_24381-674.png");
+  background-color: #8C6D46;
+  background-size: 59%;
+  background-repeat: no-repeat;
+  background-position: bottom;    
+}
+.mono {
+  font-family: monospace;
+
+}
+.type {
+  font-family: monospace;
+  color:#0000;
+  background:
+    linear-gradient(-90deg,#ffffff 5px,#0000 0) 10px 0,
+    linear-gradient(#ffffff 0 0) 0 0;
+  background-size:calc(90*1ch) 200%;
+  -webkit-background-clip:padding-box,text;
+  background-clip:padding-box,text;
+  background-repeat:no-repeat;
+  animation: 
+    b .7s infinite steps(1),   
+    t calc(90*.1s) steps(90) forwards;
+  animation-iteration-count: infinite;
+
+}
+@keyframes t{
+  from {background-size:0 200%}
+}
+@keyframes b{
+  50% {background-position:0 -100%,0 0}
+}
+.spancito{
+  font-size: 14px;
+  padding: 1px; 
+  color: red;
+  display: block;
+}
+
+.inputcito:invalid[focused="true"]{
+  border: 1px solid red;
+}
+.inputcito:valid[focused="false"]{
+  border: 1px solid green;
+}
+

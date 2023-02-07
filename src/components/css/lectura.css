@@ -1,0 +1,15 @@
+.Lectura{
+    width: auto;
+    height: auto;
+    display: flex;
+    background: #8C6D46;
+    text-align: center; 
+    justify-content: center;
+    align-items: center;
+    /* width: 100%;*/
+    height: 100vh; 
+    /*background-image: url("https://cdn.discordapp.com/attachments/884494223909462166/1058434782461177936/pexels-zsofia-feher-14532811.jpg");*/
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }

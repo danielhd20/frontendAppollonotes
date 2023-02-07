@@ -1,0 +1,53 @@
+.home{
+    width: auto;
+    height: auto;
+    display: flex;
+    background: #8C6D46;
+    text-align: center; 
+    justify-content: center;
+    align-items: center;
+    /* width: 100%;*/
+    /* height: 100vh;  */
+    background-image: url("https://cdn.discordapp.com/attachments/884494223909462166/1062789311793217576/pexels-seyda-nur-yuce-12507105.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.cardBodyHome{
+    background-color: #8C6D46 !important;
+}
+
+.disabled-link {
+background-color: #3f3f3f !important;
+background: #3f3f3f !important;
+pointer-events: none;
+
+
+}
+
+.fondobotonhome {
+background-color: #000000 !important;
+
+}
+.fondobotonhome:hover,.fondobotonhome:focus, .fondobotonhome:active, .fondobotonhome.active{
+    background-color: #3d3d3d !important;
+}
+/* -------------------- ESCRITORIO -------------------- */
+@media only screen and (min-device-width: 768px) {
+.home {
+    width: auto;
+    height: auto;
+    display: flex;
+    background: #8C6D46;
+    text-align: center; 
+    justify-content: center;
+    align-items: center;
+    /* width: 100%;*/
+    height: 100vh;
+    background-image: url("https://cdn.discordapp.com/attachments/884494223909462166/1062789311793217576/pexels-seyda-nur-yuce-12507105.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+}

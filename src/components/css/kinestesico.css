@@ -1,0 +1,87 @@
+.Kinestesico{
+    width: auto;
+    height: auto;
+    display: flex;
+    background: #8C6D46;
+    text-align: center; 
+    justify-content: center;
+    align-items: center;
+    /* width: 100%;*/
+     height: 100vh;
+    /*background-image: url("https://cdn.discordapp.com/attachments/884494223909462166/1058434782461177936/pexels-zsofia-feher-14532811.jpg");*/
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.containerimg
+{
+    background-image: url("https://cdn.discordapp.com/attachments/884494223909462166/1064301190453669938/cuales-son-las-partes-de-un-pentagrama.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:346px;
+    width:678px;
+    position: relative;
+}
+.containerimg2
+{
+    background-image: url("https://cdn.discordapp.com/attachments/884494223909462166/1064333216162533546/cifrado_americano.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:346px;
+    width:678px;
+    position: relative;
+}
+.containerimg3
+{
+    background-image: url("https://cdn.discordapp.com/attachments/884494223909462166/1064342696740794438/sostenidos.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:346px;
+    width:678px;
+    position: relative;
+}
+.containerimg4
+{
+    background-image: url("https://cdn.discordapp.com/attachments/884494223909462166/1064389825492422806/tonoysemitono.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:346px;
+    width:678px;
+    position: relative;
+}
+.containerimg5
+{
+    background-image: url("https://cdn.discordapp.com/attachments/884494223909462166/1064409100055761066/intervalos.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:346px;
+    width:678px;
+    position: relative;
+}
+.containerimg6
+{
+    background-image: url("https://cdn.discordapp.com/attachments/884494223909462166/1064527698594123786/escalas.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:346px;
+    width:678px;
+    position: relative;
+}
+.winput{
+    width: 50px;
+}
+.winput2{
+    width: 200px;
+}
+.inputss{
+    position: absolute;
+    bottom: 50px;
+    left: 0; 
+    right: 0; 
+}
