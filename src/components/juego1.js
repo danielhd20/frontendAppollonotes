@@ -133,7 +133,7 @@ class Prueba extends Component {
     this.state = {
       items: initialTasks,
       selected: initialTasks2,
-      bottom: Array()
+      bottom: []
     };
     this.onDragEnd = this.onDragEnd.bind(this);
     this.addText = this.addText.bind(this);
