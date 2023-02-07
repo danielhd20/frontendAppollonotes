@@ -2,11 +2,11 @@ import React, { Component } from "react";
 import { DragDropContext, Droppable, Draggable } from "@hello-pangea/dnd";
 import Swal from 'sweetalert2';
 // fake data generator
-const getItems = (count, offset = 0) =>
-  Array.from({ length: count }, (v, k) => k).map(k => ({
-    id: `item-${k + offset}`,
-    content: `item ${k + offset}`
-  }));
+// const getItems = (count, offset = 0) =>
+//   Array.from({ length: count }, (v, k) => k).map(k => ({
+//     id: `item-${k + offset}`,
+//     content: `item ${k + offset}`
+//   }));
   
 
 // }
