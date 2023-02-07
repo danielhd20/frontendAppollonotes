@@ -18,7 +18,7 @@ function App() {
        <Route path="/testAprendizaje/:id" element={<Test/>}/>
        <Route path="/tema" element={<Tema/>}/>
        <Route path='/prueba' element={<Prueba/>}/>
-       <Route path='/*' element={<NotFound/>}/>       
+       <Route path='/404' element={<NotFound/>}/>       
     </Routes>
  </Router>
   );
