@@ -152,7 +152,8 @@ export default function Register(){
                                                     user: idAux})
                                 }).then(() => {
                                     //setMode(true);
-                                    //navigate('/')
+                                    navigate('/');
+                                    //window.location.href = "/";
                                 })
                             } catch (error) {
                                 console.log(error);
@@ -177,7 +178,8 @@ export default function Register(){
                             showConfirmButton: true,
                             confirmButtonColor: "#413629"
                             })
-                    navigate('/');
+                    //navigate('/');
+                    
                 }
             } catch (error) {
                 console.log(error);
