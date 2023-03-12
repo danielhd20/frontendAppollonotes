@@ -42,8 +42,8 @@ export default function Register(){
         let errors = [];
         let regexName = /^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$/;
         let regexEmail = /^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$/;
-        let regexPassword = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
-    
+        //let regexPassword = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/; //La contraseña debe tener mínimo ocho caracteres, al menos una letra mayúscula, una letra minúscula, un número y un carácter especial.
+        let regexPassword = "^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" //Minimum eight characters, at least one letter and one number:
         if (!nombre.trim()) 
         {
           errors.nombre = 'El campo "Nombre(s)" no debe ser vacio.';
@@ -79,7 +79,7 @@ export default function Register(){
         setFocused(true);
         setPassword("");
         }else if (!regexPassword.test(password)){
-            errors.password = 'La contraseña debe tener mínimo ocho caracteres, al menos una letra mayúscula, una letra minúscula, un número y un carácter especial.';
+            errors.password = 'La contraseña debe tener mínimo ocho caracteres, al menos una letra y un número.';
             setFocused(true);
             setPassword("");
             }
