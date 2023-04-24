@@ -42,11 +42,11 @@ export default function Register(){
         let errors = [];
         let regexName = /^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$/;
         //let regexEmail = /^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$/; //solo acepta correos .com
-        let regexEmail = / ^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}([/.]\w{2,})?$/ //acepta correos doble extension, ejemplo .edu.co
+        let regexEmail = /^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}([/.]\w{2,})?$/; //acepta correos doble extension, ejemplo .edu.co
         //let regexPassword = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/; //La contraseña debe tener mínimo ocho caracteres, al menos una letra mayúscula, una letra minúscula, un número y un carácter especial.
         //let regexPassword = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/; //Minimum eight characters, at least one letter and one number cannot contain special caracters
         //let regexPassword = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d@$!%*#?&^_-.,]{8,}$/ //Minimum eight characters, at least one letter and one number can contain special caracters (optional)
-        let regexPassword = /^(?=.*[a-zA-Z])(?=.*[!@#$%^&*()",.-_;:]).{8,}$/ //Minimum eight characters, at least one letter and one number can contain special caracters (optional)
+        let regexPassword = /^(?=.*[a-zA-Z])(?=.*[!@#$%^&*()",.-_;:]).{8,}$/; //Minimum eight characters, at least one letter and one number can contain special caracters (optional)
 
         if (!nombre.trim()) 
         {
