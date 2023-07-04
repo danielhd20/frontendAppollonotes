@@ -31,8 +31,10 @@ export default function PruebaFinal()
 
     const [isReentrada, setIsReentrada] = useState(false);
     const [isSecondtry, setIsSecondtry] = useState(false);
+    const [isButtonDisabled, setButtonDisabled] = useState(false);
 // eslint-disable-next-line
     const[EsNuevo,setEsNuevo]=useCookies(['IsNew']);
+    
 
     const preguntas = 
         [
@@ -272,6 +274,7 @@ async function loadInfo(){
    
 function handleAnswerSubmit(isCorrect, e)
 {
+  setButtonDisabled(true);
  if(isCorrect) setPuntuación(puntuación + 1);
     
  e.target.classList.add(isCorrect ? "correct" : "incorrect");
@@ -280,10 +283,12 @@ function handleAnswerSubmit(isCorrect, e)
         if(preguntaActual === preguntas.length -1)
         {
            setIsFinished(true);
+           setButtonDisabled(false);
         }
         else
         {
            setPreguntaActual(preguntaActual + 1);
+           setButtonDisabled(false);
         }
     },1000)
 }
@@ -751,7 +756,7 @@ else{
                         </div>
                         <div className='lado-derecho'>
                             {preguntas[preguntaActual].opciones.map((respuesta) => (
-                                <button key={respuesta.textoRespuesta} onClick={(e) => handleAnswerSubmit(respuesta.isCorrect, e)} className='buttonPrueba'>{respuesta.textoRespuesta}</button>
+                                <button key={respuesta.textoRespuesta} onClick={(e) => handleAnswerSubmit(respuesta.isCorrect, e)} className='buttonPrueba' disabled={isButtonDisabled}>{respuesta.textoRespuesta}</button>
                             ))}
                         </div>
 
