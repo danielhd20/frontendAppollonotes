@@ -750,7 +750,7 @@ else{
                             <div className='numero-pregunta'>
                             <h5 className="fw-bold">📜 Pregunta {preguntaActual + 1} de {preguntas.length} 📜</h5>
                             </div>
-                                Seleccione la respuesta correcta a :
+                                Seleccione la respuesta correcta a:
                         <h5 className='titulo-pregunta fw-bold'> {preguntas[preguntaActual].titulo}</h5>
 
                         </div>
